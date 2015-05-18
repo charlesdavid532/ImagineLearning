@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:okp="okapi-framework:xliff-extensions">
+  <file original="loc.json" source-language="en-us" target-language="fr-fr" datatype="x-application/json">
+    <body>
+      <group id="0">
+        <trans-unit id="question-text">
+          <source xml:lang="en-us">Identify whether or not each of the following alkenes is capable of existing as stereoisomers.</source>
+        </trans-unit>
+      </group>
+	  <group id="1">
+        <trans-unit id="start-btn-text">
+          <source xml:lang="en-us">Start</source>
+        </trans-unit>
+      </group>
+      <group id="2">
+        <trans-unit id="back-btn-text">
+          <source xml:lang="en-us">Back</source>
+        </trans-unit>
+      </group>
+      <group id="3">
+        <trans-unit id="next-btn-text">
+          <source xml:lang="en-us">Next</source>
+        </trans-unit>
+      </group>
+      <group id="4">
+        <trans-unit id="stereogenic-btn-text">
+          <source xml:lang="en-us">Stereogenic</source>
+        </trans-unit>
+      </group>
+      <group id="5">
+        <trans-unit id="not-stereogenic-btn-text">
+          <source xml:lang="en-us">Not Stereogenic</source>
+        </trans-unit>
+      </group>
+      <group id="7">
+        <trans-unit id="stereogenic-explanation-text">
+          <source xml:lang="en-us">Here is the stereoisomer.</source>
+        </trans-unit>
+      </group>
+      <group id="8">
+        <trans-unit id="not-stereogenic-explanation-text">
+          <source xml:lang="en-us">No, there is no stereoisomer.</source>
+        </trans-unit>
+      </group>
+      <group id="9">
+        <trans-unit id="common-question-text">
+          <source xml:lang="en-us">. Identify if the alkene is:</source>
+        </trans-unit>
+      </group>
+      <group id="10">
+        <trans-unit id="result-btn-upper-left-text">
+          <source xml:lang="en-us">You got </source>
+        </trans-unit>
+      </group>
+      <group id="11">
+        <trans-unit id="result-btn-upper-right-text">
+          <source xml:lang="en-us">/6 correct</source>
+        </trans-unit>
+      </group>
+      <group id="12">
+        <trans-unit id="result-btn-lower-text">
+          <source xml:lang="en-us">Study again!</source>
+        </trans-unit>
+      </group>
+      <group id="13">
+        <trans-unit id="correct-feedback-text">
+          <source xml:lang="en-us">Correct!</source>
+        </trans-unit>
+      </group>
+      <group id="14">
+        <trans-unit id="incorrect-feedback-text">
+          <source xml:lang="en-us">Incorrect!</source>
+        </trans-unit>
+      </group>
+      <group id="14">
+        <trans-unit id="identical-text">
+          <source xml:lang="en-us">identical substituents</source>
+        </trans-unit>
+      </group>   
+      <group id="15">
+        <trans-unit id="activity-text">
+          <source xml:lang="en-us">This activity is not recorded in your course gradebook. This activity is intended to be a practice learning tool.</source>
+        </trans-unit>
+      </group> 
+      <group id="16">
+        <trans-unit id="question-1-img-text">
+          <source xml:lang="en-us">(E)-1-bromoprop-1-ene</source>
+        </trans-unit>
+      </group>         
+      <group id="17">
+        <trans-unit id="question-2-img-text">
+          <source xml:lang="en-us">(E)-3-ethylhex-2-ene</source>
+        </trans-unit>
+      </group>   
+      <group id="18">
+        <trans-unit id="question-3-img-text">
+          <source xml:lang="en-us">styrene</source>
+        </trans-unit>  
+      </group>     
+      <group id="19">
+        <trans-unit id="question-4-img-text">
+          <source xml:lang="en-us">2-chloroprop-1-ene</source>
+        </trans-unit>  
+      </group>   
+       <group id="20">
+        <trans-unit id="question-5-img-text">
+          <source xml:lang="en-us">(E)-4-methyloct-4-ene</source>
+        </trans-unit>  
+      </group>       
+       <group id="21">
+        <trans-unit id="question-6-img-text">
+          <source xml:lang="en-us">1,1-dichloro-3-methylbut-1-ene</source>
+        </trans-unit>  
+      </group> 
+       <group id="22">
+        <trans-unit id="result-1-img-text">
+          <source xml:lang="en-us">(Z)-1-bromoprop-1-ene</source>
+        </trans-unit>  
+      </group>  
+       <group id="23">
+        <trans-unit id="result-2-img-text">
+          <source xml:lang="en-us">(Z)-3-ethylhex-2-ene</source>
+        </trans-unit>  
+      </group>  
+       <group id="24">
+        <trans-unit id="result-5-img-text">
+          <source xml:lang="en-us">(Z)-4-methylhept-3-ene</source>
+        </trans-unit>  
+      </group>                                                         
+    </body>
+  </file>
+</xliff>

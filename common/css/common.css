@@ -1,0 +1,73 @@
+﻿@font-face {
+    font-family: "HelveticaNeueLTStd";
+    src: url('fonts/HelveticaNeueLTStd-Roman.eot');
+    src: /*url('fonts/HelveticaNeueLTStd-Roman.eot?#iefix') format('embedded-opentype'),*/
+    		 url('fonts/HelveticaNeueLTStd-Roman.woff2') format('woff2'),
+	    	 url('fonts/HelveticaNeueLTStd-Roman.woff') format('woff'), /* Pretty Modern Browsers */
+	       url('fonts/HelveticaNeueLTStd-Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+	       url('fonts/HelveticaNeueLTStd-Roman.svg#svgFontName') format('svg');			  	  
+}
+.app-wrapper {
+  cursor: default;
+}
+.preloader {
+  display: block;
+  white-space: pre;
+  position: absolute;
+  top: 50%;
+  width:100%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+.preloader.hide {
+  display: none;
+}
+.preloader .loading-content {
+  display: inline-block;
+  position: relative;
+  min-width: 150px;
+}
+.preloader .loading-content .counter-children {
+  display: inline-block;
+}
+#interactive-holder {
+  height: 610px;
+  width: 580px;
+}
+.common-button {
+  position: relative;
+  height: 30px;
+  text-align: center;
+  font-family: HelveticaNeueLTStd;
+  -webkit-tap-highlight-color: transparent;  
+}
+.button-text {
+  position: relative;
+  height: inherit;
+  width: inherit;
+  display: table-cell;
+  vertical-align: middle;
+}
+.remove-text-selection {
+  -moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.down, .hover.down.active {
+}
+.hover.active {
+}
+.hide {
+  display: none;
+}
+.active {
+  opacity: 1;
+  cursor: pointer;
+}
+.disabled {
+  cursor: default;
+}

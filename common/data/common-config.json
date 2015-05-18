@@ -1,0 +1,57 @@
+{
+	"resources": {
+		"js": [
+			  {
+				"id": "player-model",
+				"url": "player.js",
+				"basePath": "COMMON_MODELS"
+			}, {
+				"id": "player-view",
+				"url": "player.js",
+				"basePath": "COMMON_VIEWS"
+			},{
+				"id": "sound-model",
+				"url": "sound-manager.js",
+				"basePath": "COMMON_MODELS"
+			}, {
+				"id": "sound-view",
+				"url": "sound-manager.js",
+				"basePath": "COMMON_VIEWS"
+			},{
+           
+				"id": "button-template",
+				"url": "button.js",
+				"basePath": "COMMON_TEMPLATES"
+			}, {
+				"id": "base-interactive-model",
+				"url": "base-interactive.js",
+				"basePath": "COMMON_MODELS"
+			}, {
+				"id": "base-interactive-view",
+				"url": "base-interactive.js",
+				"basePath": "COMMON_VIEWS"
+			}, {
+				"id": "common-button-model",
+				"url": "button.js",
+				"basePath": "COMMON_MODELS"
+			}, {
+				"id": "common-button-view",
+				"url": "button.js",
+				"basePath": "COMMON_VIEWS"
+			}, {
+				"id": "manager-model",
+				"url": "manager.js",
+				"basePath": "COMMON_MODELS"
+			}, {
+				"id": "common-button-collection",
+				"url": "button.js",
+				"basePath": "COMMON_COLLECTIONS"
+			}
+		],
+		"css": [],
+		"media": {
+			"images": [],
+			"audio": []
+		}
+	}
+}

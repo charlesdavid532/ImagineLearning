@@ -1,0 +1,82 @@
+{
+  "resources": {
+    "js": [
+      {
+        "id": "interactive-1-model",
+        "url": "interactive-1-model.js",
+        "basePath": "INTERACTIVE_MODELS"
+      }, {
+        "id": "question-model",
+        "url": "question.js",
+        "basePath": "INTERACTIVE_MODELS"
+      }, {
+        "id": "quest-collection",
+        "url": "quest-collection.js",
+        "basePath": "INTERACTIVE_COLLECTIONS"
+      }, {
+        "id": "button-collection",
+        "url": "button-collection.js",
+        "basePath": "INTERACTIVE_COLLECTIONS"
+      }, {
+        "id": "question-view",
+        "url": "question.js",
+        "basePath": "INTERACTIVE_VIEWS"
+      }, {
+        "id": "welcome",
+        "url": "welcome.js",
+        "basePath": "INTERACTIVE_VIEWS"
+      }, {
+        "id": "pearson-interactive-1",
+        "url": "pearson-interactive-1.js",
+        "basePath": "INTERACTIVE_VIEWS"
+      }, {
+        "id": "problem-solve-screen",
+        "url": "problem-solve-screen.js",
+        "basePath": "INTERACTIVE_VIEWS"
+      }
+    ],
+    "json": [
+    ],
+    "css": [
+      {
+        "id": "interactive-css",
+        "url": "interactive.css",
+        "basePath": "INTERACTIVE_CSS"
+      }
+    ],
+    "audio": [
+		{
+			"id": "sound",
+			"url": "sound.mp3",
+			"basePath": "INTERACTIVE_AUDIO"
+		}
+	],
+    "templates": [
+      {
+        "id": "main-template",
+        "url": "main.js",
+        "basePath": "INTERACTIVE_TEMPLATES"
+      }, {
+        "id": "welcome-template",
+        "url": "welcome.js",
+        "basePath": "INTERACTIVE_TEMPLATES"
+      }, {
+        "id": "question-template",
+        "url": "question.js",
+        "basePath": "INTERACTIVE_TEMPLATES"
+      }, {
+        "id": "problemSolve-template",
+        "url": "problemSolve.js",
+        "basePath": "INTERACTIVE_TEMPLATES"
+      }
+    ]
+  },
+  "config": {
+        "model": {
+            "class": "ExerciseOne"
+        },
+        "view": {
+            "class": "ExerciseOne"
+        }
+	}
+}

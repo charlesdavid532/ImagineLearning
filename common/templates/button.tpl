@@ -1,0 +1,1 @@
+<div id="<%=buttonId%>" class="<%=baseClass%>"><%=text%></div>

@@ -1,0 +1,104 @@
+{
+	"elements": [
+		{
+			"id": "question-text",
+			"messages": "Identify whether or not each of the following alkenes is capable of existing as stereoisomers."
+		},
+		{
+			"id": "start-btn-text",
+			"messages": "Start"
+		},
+		{
+			"id": "back-btn-text",
+			"messages": "Back"
+		},
+		{
+			"id": "next-btn-text",
+			"messages": "Next"
+		},
+		{
+			"id": "stereogenic-btn-text",
+			"messages": "Stereogenic"
+		},
+		{
+			"id": "not-stereogenic-btn-text",
+			"messages": "Not Stereogenic"
+		},
+		{
+			"id": "stereogenic-explanation-text",
+			"messages": "Here is the stereoisomer."
+		},
+		{
+			"id": "not-stereogenic-explanation-text",
+			"messages": "No, there is no stereoisomer."
+		},
+		{
+			"id": "common-question-text",
+			"messages": ". Identify if the alkene is:"
+		},
+		{
+			"id": "result-btn-upper-left-text",
+			"messages": "You got "
+		},
+		{
+			"id": "result-btn-upper-right-text",
+			"messages": "/6 correct"
+		},
+		{
+			"id": "result-btn-lower-text",
+			"messages": "Study again!"
+		},
+		{
+			"id": "correct-feedback-text",
+			"messages": "Correct!"
+		},
+		{
+			"id": "incorrect-feedback-text",
+			"messages": "Incorrect!"
+		},
+		{
+			"id": "identical-text",
+			"messages": "identical substituents"
+		},
+		{
+			"id": "activity-text",
+			"messages": "This activity is not recorded in your course gradebook. This activity is intended to be a practice learning tool."
+		},
+		{
+			"id": "question-1-img-text",
+			"messages": "(E)-1-bromoprop-1-ene"
+		},
+		{
+			"id": "question-2-img-text",
+			"messages": "(E)-3-ethylhex-2-ene"
+		},
+		{
+			"id": "question-3-img-text",
+			"messages": "styrene"
+		},
+		{
+			"id": "question-4-img-text",
+			"messages": "2-chloroprop-1-ene"
+		},
+		{
+			"id": "question-5-img-text",
+			"messages": "(E)-4-methyloct-4-ene"
+		},
+		{
+			"id": "question-6-img-text",
+			"messages": "1,1-dichloro-3-methylbut-1-ene"
+		},
+		{
+			"id": "result-1-img-text",
+			"messages": "(Z)-1-bromoprop-1-ene"
+		},
+		{
+			"id": "result-2-img-text",
+			"messages": "(Z)-3-ethylhex-2-ene"
+		},
+		{
+			"id": "result-5-img-text",
+			"messages": "(Z)-4-methylhept-3-ene"
+		}
+	]
+}

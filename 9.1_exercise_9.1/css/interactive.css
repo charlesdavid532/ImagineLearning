@@ -1,0 +1,528 @@
+﻿body {
+    margin: 0px !important;
+}
+.activity-text{
+	position: absolute;
+	height:30px;
+	width:507px;
+	font-family: HelveticaNeueLTStd;
+	color:#259df5;
+	font-size: 14px;
+	line-height: 16px;
+	font-style:italic;
+	text-align: left;	
+	top:6px;
+	left:20px;
+}
+
+.interactive-area {
+    position: relative;
+    height: 610px;
+    width: 580px;
+    overflow: hidden;
+		border: 1px solid;
+}
+
+.main-activity-area {
+    position: relative;
+    height: 610px;
+    width: 580px;
+    overflow: hidden;
+}
+.remove-text-selection {
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+		-webkit-user-select: none;    
+    user-select:none;
+}
+.welcome-screen {
+    position: absolute;
+    height: 610px;
+    width: 580px;
+}
+
+.problem-solve-screen {
+    position: absolute;
+    height: 610px;
+    width: 580px;
+}
+
+.interactive-common-button.active {
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: #0e6ab0;
+    border-style: solid;
+    background-color: #107aca;
+}
+
+.interactive-common-button.hover {
+    border-color: #0c5d99;
+    background-color: #0e6ab0;
+}
+
+.interactive-common-button.down, .interactive-common-button.hover.down {
+    border-color: #0a4d80;
+    background-color: #0c5d99;
+}
+
+.interactive-common-button.disabled {
+	  background-color: #9dc0db;	
+	  border: solid;
+	  border-width: 2px;
+	  border-color: #9dc0db;
+	  border-radius: 3px;
+}
+/*********************************************Welcome Screen Start**************************************************/
+.start-button {
+	  position: absolute;
+	  height: 44px;
+	  width: 77px;
+	  top: 332px;
+    left: 248px;
+ 		color:  #ffffff;   
+}
+
+.welcome-text {
+    position: relative;
+    height: 150px;
+    width: 491px;
+    top: 109px;
+    margin-left: 43px;
+    font-family: HelveticaNeueLTStd;
+    color: #4d4d4d;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: left;
+}
+/*********************************************Welcome Screen End****************************************************/
+/*********************************************Problem Solve Screen Start*************************************************/
+.screen-area {
+  position: relative;
+  top: 37px;
+  height: 564px;
+  width: 100%;
+}
+
+.question-area {
+    position: relative;
+    height: 325px;
+    width: 100%;
+    top: 62px;
+}
+
+.footer-container {
+    position: absolute;
+    height: 30px;
+    bottom: 13px;
+    width: 100%;
+}
+
+.question-text-container {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    left:39px;
+}
+
+.question-number {
+    position: relative;
+    float: left;
+    top: 20px;
+		font-family: HelveticaNeueLTStd;
+		color:  #4d4d4d;
+		font-size: 18px;
+		line-height: 24px;
+}
+
+.question-text {
+    position: relative;
+    float: left;
+    top: 20px;
+		font-family: HelveticaNeueLTStd;
+		color:  #4d4d4d;
+		font-size: 18px;
+		line-height: 24px;    
+}
+/*********************************************Questions Screen Start*************************************************/
+.common-question-activity-area {
+    position: absolute;
+    height: 325px;
+    width: 100%;
+}
+
+.stereogenic-btn-container {
+    position: relative;
+    clear: both;
+    float: left;
+    top: 29px;
+    margin-left: 90px;
+    width: 156px;
+    height: 40px;    
+}
+
+.not-stereogenic-btn-container {
+    position: relative;
+    float: left;
+    width: 156px;
+    height: 40px;    
+    top: 29px;
+    margin-left: 80px;
+}
+
+.answer-button {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+.answer-button.answer-correct.disabled {
+    background-color: #a4c3a4;   
+    border-color:#a4c3a4;
+}
+
+.answer-button.answer-incorrect.disabled {
+    background-color: #e78e8c;  
+    border-color:#e78e8c;         
+}
+.correction-text {
+    position: relative;
+    clear: both;
+    height: 11px;
+    width: 48px;
+    top: 35px;
+    font-family: HelveticaNeueLTStd;
+    font-size: 14px;
+    line-height: 24px;
+    visibility: hidden;
+}
+.show-visible{
+	visibility: visible;
+}
+.correction-text.answer-correct.stereogenic-correct-text  {
+    margin-left: 145px;
+}
+.correction-text.answer-incorrect.stereogenic-correct-text  {
+    margin-left: 140px;
+}
+.correction-text.answer-correct.not-stereogenic-correct-text{
+    margin-left: 385px;
+}
+.correction-text.answer-incorrect.not-stereogenic-correct-text{
+    margin-left: 377px;	
+}
+.correction-text.answer-incorrect {
+    color: #b94a48;
+}
+
+.correction-text.answer-correct {
+    color: #468847;
+}
+
+.display-image {
+    position: relative;
+    clear: both;
+    top: 50px;
+}
+
+.result-image {
+    visibility:hidden;
+    position: relative;
+    clear: both;
+    top: 60px;
+}
+
+.identical-text {
+    position: relative;
+    float: left;
+    height: 27px;
+    width: 79px;
+    font-family: 'HelveticaNeueLTStd';
+    color: #2480b3;
+    font-size: 13.962px;
+    font-weight: 700;
+    letter-spacing: -0.349px;
+    text-align: center;
+    display: none;
+}
+
+.identical-text.question-3 {
+    left: 283px;
+    top:25px;
+}
+
+.identical-text.question-4 {
+  top: 45px;
+  left: 5px;
+}
+
+.identical-text.question-6 {
+    left: 251px;
+    top: -50px;
+}
+
+.identical-text.show {
+    display: block;
+}
+
+.explanation-text {
+    position: absolute;
+    font-family: 'HelveticaNeueLTStd';
+    color: #2480b3;
+    font-size: 13.962px;
+    font-weight: 700;
+    letter-spacing: -0.349px;
+    text-align: left;
+}
+
+.explanation-text.stereogenic-exp {
+  width: 110px;
+  height: 32px;
+  top: 380px;
+  left: 245px;
+}
+
+.explanation-text.non-stereogenic-exp {
+    width: 103px;
+    height:44px;
+    top: 377px;
+    left: 10px;
+}
+
+.explanation-text.show {
+    display: block;
+}
+
+.display-image.question-1 {
+    height: 100px;
+    width: 140px;
+    left: 96px;
+}
+
+.result-image.question-1 {
+    height: 52px;
+    width: 120px;
+    left: 380px;
+    top: 93px;
+}
+
+.display-image.question-2 {
+    height: 95px;
+    width: 185px;
+    left: 61px;
+}
+
+.result-image.question-2 {
+    height: 130px;
+    width: 145px;
+    left: 359px;
+    top: 48px;
+}
+
+.display-image.question-3 {
+	  height: 150px;
+	  width: 160px;
+	  left: 50px;
+	  top: 60px;   
+}
+
+.result-image.question-3 {
+	  position: absolute;
+	  top: 140px;
+	  left: 122px; 
+		height: 106px;
+		width: 158px;	     
+}
+
+.display-image.question-4 {
+	  height: 100px;
+	  width: 130px;
+    left:150px;
+}
+
+.result-image.question-4 {
+  position: absolute;
+  height: 110px;
+  width: 100px;
+  top: 82px;
+  left: 73px;
+}
+
+.display-image.question-5 {
+    height: 100px;
+    width: 240px;
+    left: 52px;
+}
+
+.result-image.question-5 {
+    height: 145px;
+    width: 200px;
+    left: 341px;
+    top: 58px;
+}
+
+.display-image.question-6 {
+	  height: 113px;
+	  width: 178px;
+    left:70px;
+}
+
+.result-image.question-6 {
+	position: absolute;
+  height: 80px;
+  width: 50px;
+  left: 210px;
+  top: 63px;
+}
+/*********************************************Questions Screen Ends*************************************************/
+/*********************************************Footer Start*************************************************/
+.footer-button-container {
+  position: relative;
+  float: left;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 28px;
+  border: 2px solid transparent;
+}
+.footer-button-container.selected {
+    border-color:#107aca;
+}
+.prev-next-btn {
+    height: 26px;
+    width: 50px;
+}
+
+.footer-button-container-1 {
+    height: 26px;
+    width: 50px;	
+    margin-right:0px;
+    margin-left: 18px;
+}
+
+.footer-button-container-2{
+	margin-left:52px;
+}
+.footer-button-container-7{
+	margin-right:0px;
+}
+.footer-button-container-8{
+  position: absolute;
+  height: 26px;
+  width: 50px;
+  left: 504px;
+}
+.inner-prev-next-btn {
+    width: 50px;
+    height: 26px;
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: #0e6ab0;
+    border-style: solid;
+    background-color: #107aca;
+    font-family: HelveticaNeueLTStd;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+.footer-round-btn {  
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: #d0d0d0;
+  border-style: solid;
+  background-color: #f8f8f8;
+  font-family: HelveticaNeueLTStd;
+  color: #4d4d4d;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  top: 1px;
+  left: 1px;
+}
+
+.footer-round-btn.hover {
+    border-color: #d0d0d0;
+    background-color: #e8e8e8;
+}
+
+.footer-round-btn.down,
+.footer-round-btn.hover.down {
+    border-color: #bbbbbb;
+    background-color: #cccccc;
+}
+
+.button-selected {
+    border-color: #d0d0d0;
+    background-color: #d9ecfd;
+}
+
+.footer-round-btn.answer-incorrect {
+		color:#ffffff;
+    border-color: #883a39;
+    background-color: #b94a48;
+}
+
+.footer-round-btn.answer-incorrect.hover {
+    border-color:  #6f3232;
+    background-color: #9c3e3d;
+}
+.footer-round-btn.answer-incorrect.down,
+.footer-round-btn.answer-incorrect.hover.down {
+    border-color:  #5e2a2a;
+    background-color:  #7c3131;
+}
+
+.footer-round-btn.answer-correct {
+		color:#ffffff;
+    border-color: #366e37;
+    background-color: #468847;
+}
+
+.footer-round-btn.answer-correct.hover {
+    border-color:  #315e32;
+    background-color:  #367037;
+}
+.footer-round-btn.answer-correct.down,
+.footer-round-btn.answer-correct.hover.down {
+    border-color:  #214022;
+    background-color:  #275028;
+}
+/*********************************************Footer End*************************************************/
+.result-button {
+    position: absolute;
+    height: 59px;
+    width: 186px;
+    bottom: 63px;
+    left: 187px;
+    display: none;
+}
+
+.show-result-button {
+    height: 50px;
+    width: 200px;
+}
+.common-result-text{
+    position: relative;
+    height: 25px;
+    width: 200px;
+    text-align: center;
+		font-family: HelveticaNeueLTStd;
+		color:  #ffffff;
+}
+.upper-text{
+		font-size: 18px; 
+		line-height: 27px;
+}
+.lower-text {   
+		font-size: 14px;
+		line-height: 24px;
+}
+
+.show-result {
+    display: block;
+}
+/*********************************************Problem Solve Screen End**************************************************/
