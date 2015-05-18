@@ -1,6 +1,6 @@
-﻿(function(CommonModels) {
+(function() {
 	'use strict';
-	CommonModels.ButtonModel = Backbone.Model.extend({
+	ButtonModel = Backbone.Model.extend({
 		/**
 		 * Sets the default properties of the model
 		 *
@@ -43,7 +43,7 @@
 				});
 			}
 			if (this.getState() === null) {
-				this.setState(CommonModels.ButtonModel.STATES.ACTIVE);
+				this.setState(ButtonModel.STATES.ACTIVE);
 			}
 		},
 
@@ -95,9 +95,7 @@
 		 */
 		'STATES' : {
 			'ACTIVE' : 'active',
-			'DISABLED' : 'disabled',
-			'SELECTED' : 'selected',
-			'COMPLETED' : 'completed'
+			'DISABLED' : 'disabled'
 		}
 	});
-})(ImagineLearning.Common.Models);
+})();

@@ -1,9 +1,7 @@
-﻿/* globals $ */
-
-(function(Common) {
+(function() {
 	'use strict';
-	var ButtonModelClassname = ImagineLearning.Common.Models.ButtonModel;
-	Common.Views.ButtonView = Backbone.View.extend({
+	
+		ButtonView = Backbone.View.extend({
 		/**
 		 * Initialization of the view
 		 *
@@ -51,7 +49,6 @@
 				this.$el.append("<div class ='button-text'>" + text + "</div> ");
 			}
 			this._stateChange();
-			this._applyDeviceStyles();
 			return this;
 		},
 		/**
@@ -61,39 +58,6 @@
 		 */
 		'_bindEvents' : function _bindEvents() {
 			this.listenTo(this.model, "change:state", this._stateChange);
-		},
-		/**
-		 * Apply Device specific style
-		 * @method _applyDeviceStyles
-		 * @private
-		 */
-		'_applyDeviceStyles' : function _applyDeviceStyles() {
-			var isMobile = {
-				Android : function() {
-					return navigator.userAgent.match(/Android/i);
-				},
-				iOS : function() {
-					return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-				},
-				Mac:function (){
-					return  navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i);
-				},
-				any : function() {
-					return (isMobile.Android() || isMobile.iOS());
-				}
-			};
-			/**Set Line Height cause of Font style**/
-			if (isMobile.Android()) {
-				var btnHeight = this.$el.css('height').replace('px', ''),
-				    btnLineHeight = parseInt(btnHeight) + 6;
-				this.$el.css('line-height', btnLineHeight + 'px');
-			}
-			/**Set Line Height cause of Font style**/
-			if (isMobile.iOS()||isMobile.Mac()) {
-				var btnHeight = this.$el.css('height').replace('px', ''),
-				    btnLineHeight = parseInt(btnHeight) + 4;
-				this.$el.css('line-height', btnLineHeight + 'px');
-			}			
 		},
 		/**
 		 * Callback function for mouse down event.
@@ -162,8 +126,7 @@
 			if (!this._isButtonActive()) {
 				return;
 			}
-			this.model.setState(ButtonModelClassname.STATES.SELECTED);
-			this.trigger(Concord.Common.Views.ButtonView.EVENTS.CLICKED, event);
+			this.trigger(ButtonView.EVENTS.CLICKED, event);
 		},
 
 		/**
@@ -174,7 +137,7 @@
 		 * @private
 		 */
 		'_isButtonActive' : function _isButtonActive() {
-			if (this.model.getState() === ButtonModelClassname.STATES.ACTIVE) {
+			if (this.model.getState() === ButtonModel.STATES.ACTIVE) {
 				return true;
 			}
 			return false;
@@ -188,17 +151,14 @@
 		 */
 		'_stateChange' : function _stateChange() {
 			var state = this.model.getState(),
-			    buttonStates = ButtonModelClassname.STATES,
+			    buttonStates = ButtonModel.STATES,
 			    $el = this.$el;
 
 			if (state === buttonStates.ACTIVE) {
-				$el.removeClass('disabled selected');
+				$el.removeClass('disabled');
 				$el.addClass('active');
-			} else if (state === buttonStates.SELECTED) {
-				$el.removeClass('active disabled');
-				$el.addClass('selected');
 			} else if (state === buttonStates.DISABLED) {
-				$el.removeClass('active selected');
+				$el.removeClass('active ');
 				$el.addClass('disabled');
 			}
 
@@ -213,4 +173,4 @@
 			'CLICKED' : 'clicked'
 		}
 	});
-})(ImagineLearning.Common);
+})();
