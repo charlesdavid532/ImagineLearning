@@ -1,7 +1,7 @@
-(function() {
+(function(Common) {
 	'use strict';
 	
-		ButtonView = Backbone.View.extend({
+			Common.Views.ButtonView = Backbone.View.extend({
 		/**
 		 * Initialization of the view
 		 *
@@ -173,4 +173,4 @@
 			'CLICKED' : 'clicked'
 		}
 	});
-})();
+})(ImagineLearning.Common);
