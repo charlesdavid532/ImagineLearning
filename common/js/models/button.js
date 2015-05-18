@@ -1,6 +1,6 @@
-(function() {
+(function(CommonModels) {
 	'use strict';
-	ButtonModel = Backbone.Model.extend({
+	CommonModels.ButtonModel = Backbone.Model.extend({
 		/**
 		 * Sets the default properties of the model
 		 *
@@ -98,4 +98,4 @@
 			'DISABLED' : 'disabled'
 		}
 	});
-})();
+})(ImagineLearning.Common.Models);
