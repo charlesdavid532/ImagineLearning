@@ -27,12 +27,29 @@
     	this._initAudio();    	
       return this;
     },
+    _initAudio: function _initAudio() {
+        this._createAudioTags();
+        this._initRecording();
+    },
+    _createAudioTags: function _createAudioTags() {
+        var audioData = this.model.get('audioData'),
+            audioId = audioData.id,
+            audioSrc = audioData.src;
+        if ($('#' + audioId).length !== 0) {
+            $('#' + audioId).remove();
+        }
+        $('body').append('<audio id=' + audioId + '></audio>');
+        $('#' + audioId).append('<source src=' + audioSrc + '.mp3 type="audio/mpeg"></source>');
+        $('#' + audioId).attr('src', audioSrc + '.mp3').attr('type', 'audio/mpeg').attr('codecs', 'mp3');
+
+        this.$audio = $('#' + audioId);
+    },
     /**
-     * Initialize Audio
-     * @method initialize
+     * Initialize Recording
+     * @method _initRecording
      * @constructor
      */    
-		'_initAudio':function _initAudio(){	
+    '_initRecording': function _initRecording() {
         if (!navigator.getUserMedia)
             navigator.getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
         if (!navigator.cancelAnimationFrame)
