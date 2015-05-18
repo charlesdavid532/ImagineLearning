@@ -2,7 +2,7 @@
     'use strict';
     var Preloader = function () {
         this._events = {};
-        this._audioData = {};
+        this._audioData = [];
         this._interactiveModelName = null;
         this._interactiveViewName = null;
         return this;
@@ -36,8 +36,18 @@
         $.each(config, function (key, value) {
             switch (key) {
                 case "audio":
-                    preloader._audioData.id = value[0].id;
-                    preloader._audioData.src = ImagineLearning.Path.getPath(value[0]);
+                    var data = {}, i = 0;
+                    for (; i < value.length; i++) {
+                        data.id = value[i].id;
+                        data.src = ImagineLearning.Path.getPath(value[i]);
+                        data.type = value[i].type;
+                        /*
+                        preloader._audioData.id = value[0].id;
+                        preloader._audioData.src = ImagineLearning.Path.getPath(value[0]);
+                        preloader._audioData.type = value[0].type;
+                        */
+                        preloader._audioData.push(data);
+                    }
                     break;
                 default:
                     if (value.length > 0) {
