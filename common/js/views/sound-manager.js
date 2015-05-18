@@ -1,5 +1,5 @@
-(function() {
-	AudioManager = Backbone.View.extend({
+(function(CommonViews) {
+	CommonViews.AudioManager = Backbone.View.extend({
 		/**
 		 * Audio Context
 		 * @property audioContext
@@ -32,8 +32,7 @@
      * @method initialize
      * @constructor
      */    
-		'_initAudio':function _initAudio(){
-			this.audioContext = new AudioContext();			
+		'_initAudio':function _initAudio(){	
         if (!navigator.getUserMedia)
             navigator.getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
         if (!navigator.cancelAnimationFrame)
@@ -51,11 +50,12 @@
 	                },
 	                "optional": []
 	            },
-	        }, _createAudioNode, function(e) {
+	        }, this._createAudioNode, function(e) {
 	            alert('Error getting audio');
 	        });			
 		}, 
 		'_createAudioNode':function _createAudioNode(stream){
+			this.audioContext = new AudioContext();					
 			var self=this,
 					zeroGain=null,
 					analyserNode=null,
@@ -165,4 +165,4 @@
 			TIME_UPDATE_EVENT:'time-update-event'
 		}
 	});
-});
+})(ImagineLearning.Common.Views);

@@ -1,5 +1,5 @@
-(function() {
-	AudioManager = Backbone.Model.extend({
+(function(CommonModel) {
+	CommonModel.AudioManager = Backbone.Model.extend({
 		defaults : function() {
 			return {
 				/**
@@ -129,4 +129,4 @@
 			this.setAudioData(audioData).setAudioPath(audioPath);
 		}
 	});
-});
+})(ImagineLearning.Common.Models);
