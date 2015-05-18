@@ -71,7 +71,7 @@
               interactiveViewName: engine.preloader.getInteractiveViewName(),
           });
           var playerView = new ImagineLearning.Common.Views.PlayerView({
-              model: playerModel,el:'.player'
+              model: playerModel,el:'#player'
           });
       };
 

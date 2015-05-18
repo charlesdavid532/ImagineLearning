@@ -55,7 +55,6 @@
          * @constructor
          */
         '_initRecording': function _initRecording() {
-            this.audioContext = new AudioContext();
             if (!navigator.getUserMedia)
                 navigator.getUserMedia = navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
             if (!navigator.cancelAnimationFrame)
@@ -73,11 +72,12 @@
                         },
                         "optional": []
                     },
-                }, this._createAudioNode, function (e) {
+	        }, this._createAudioNode, function(e) {
                     alert('Error getting audio');
                 });
         },
         '_createAudioNode': function _createAudioNode(stream) {
+			this.audioContext = new AudioContext();					
             var self = this,
 					zeroGain = null,
 					analyserNode = null,
