@@ -13,8 +13,12 @@
 		<div id="left-panel-header-text" class="header-text">
 			<div class="text-container">Six Red Marbles</div>
 		</div>
-		<div id="left-panel-continue-btn" class="left-panel-continue-btn"></div>
-		<div id="left-panel-exit-btn" class="left-panel-exit-btn"></div>		
+		<div id="left-panel-continue-btn-container" class="left-panel-continue-btn-container">
+			<div id="left-panel-continue-btn" class="left-panel-continue-btn"></div>
+		</div>
+		<div id="left-panel-exit-btn-container" class="left-panel-exit-btn-container">
+			<div id="left-panel-exit-btn" class="left-panel-exit-btn"></div>		
+		</div>
 	</div>	
 	<div id="exit-panel" class="exit-panel">
 		<div id="exit-panel-popup-container" class="exit-panel-popup-container">

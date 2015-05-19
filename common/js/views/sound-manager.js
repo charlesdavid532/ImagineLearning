@@ -246,7 +246,7 @@
         '_doneEncoding': function _doneEncoding(blob) {
             this.model.setRecordedAudio(blob);
             var url = (window.URL || window.webkitURL).createObjectURL(blob);
-            audio = document.getElementById("audio");
+            audio = document.getElementById("recordedAudio");
             audio.src = url;
             Recorder.setupDownload(blob, "myRecording" + ((recIndex < 10) ? "0" : "") + recIndex + ".wav");
             recIndex++;
