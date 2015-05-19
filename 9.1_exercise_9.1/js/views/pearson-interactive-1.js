@@ -20,15 +20,19 @@
      * @method initialize
      * @constructor
      */
-    'initialize' : function initialize() {
+    'initialize': function initialize(data) {
+        this.player = data.player;
+        this._bindEvents();
     },
     /**
      * Renders the view of Pearson Activity 1
      * @method render
      * @public
      **/
-    'render' : function render() {
-      this._loadTemplate()._applyText()._createWelcomeScreen()._createProblemSolveScreen()._showCurrentScreen();
+    'render': function render() {
+        
+        this._loadTemplate()._applyText()._createWelcomeScreen()._createProblemSolveScreen()._showCurrentScreen();
+        
       return this;
     },
     /**
@@ -37,9 +41,17 @@
      * @private
      **/
     '_bindEvents' : function _bindEvents() {
-      this.listenTo(this.welcomeScreenView, Concord.Interactives.Views.WelcomeScreen.EVENTS.START_BUTTON_CLICKED, this._startBtnClicked);
-      this.listenTo(this.model, 'change:currentScreen', this._showCurrentScreen);
+      //this.listenTo(this.welcomeScreenView, Concord.Interactives.Views.WelcomeScreen.EVENTS.START_BUTTON_CLICKED, this._startBtnClicked);
+        //this.listenTo(this.model, 'change:currentScreen', this._showCurrentScreen);
+        $('#play-1').on('click', $.proxy(this.loadSound1, this));
+        $('#play-2').on('click', $.proxy(this.loadSound2, this));
       return this;
+    },
+    loadSound1: function loadSound1() {
+        this.player.model.get('soundView').playAudio('sound');
+    },
+    loadSound2: function loadSound2() {
+        this.player.model.get('soundView').playAudio('sound1');
     },
     /**
      * Load Template

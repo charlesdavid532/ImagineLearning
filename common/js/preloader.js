@@ -36,8 +36,9 @@
         $.each(config, function (key, value) {
             switch (key) {
                 case "audio":
-                    var data = {}, i = 0;
+                    var  i = 0;
                     for (; i < value.length; i++) {
+                        var data = {};
                         data.id = value[i].id;
                         data.src = ImagineLearning.Path.getPath(value[i]);
                         data.type = value[i].type;
