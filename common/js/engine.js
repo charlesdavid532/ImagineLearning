@@ -68,6 +68,7 @@
       loadPlayer = function () {
           var playerModel = new ImagineLearning.Common.Models.PlayerModel({
               audioData: engine.preloader.getAudioData(),
+              pathData: engine.preloader.getPathData(),
               interactiveModelName: engine.preloader.getInteractiveModelName(),
               interactiveViewName: engine.preloader.getInteractiveViewName(),
           });

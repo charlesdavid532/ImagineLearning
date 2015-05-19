@@ -42,6 +42,9 @@
 		},
 		_bindEvents: function _bindEvents() {
 		    this.listenTo(this, Common.Views.AudioManager.EVENTS.AUDIO_FILES_LOADED, this._createInteractive);
+		},
+		getImagePath: function getImagePath(imageId) {
+		    return this.model.getImagePath(imageId);
 		}
 
 		

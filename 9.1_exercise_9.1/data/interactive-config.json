@@ -58,6 +58,13 @@
 			"basePath": "INTERACTIVE_AUDIO"
 		}
 	],
+	"image": [
+		{
+			"id": "image1",
+			"url": "image_zF.png",
+			"basePath": "INTERACTIVE_IMAGE"
+		}
+	],
     "templates": [
       {
         "id": "main-template",

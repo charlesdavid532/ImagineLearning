@@ -57,7 +57,14 @@
                 * @type Backbone.View
                 * @default null
                 */
-			    soundView: null
+			    soundView: null,
+			    /**
+                * Holds the id and paths of all the resources
+                * @property audioData
+                * @type Object
+                * @default null
+                */
+			    pathData: null
 			};
 		},
 
@@ -68,6 +75,15 @@
 		 */
 		initialize: function() {
 			
+		},
+		getImagePath: function getImagePath(imageId) {
+		    var resourcePaths = this.get('pathData');
+
+		    for (var file in resourcePaths) {
+		        if (resourcePaths[file].id === imageId && resourcePaths[file].type === "image") {
+		            return resourcePaths[file].path;
+		        }
+		    }
 		}
 
 		
