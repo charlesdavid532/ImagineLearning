@@ -36,6 +36,7 @@
 #interactive-holder {
   height: 610px;
   width: 580px;
+  position: absolute;
 }
 .common-button {
   position: relative;

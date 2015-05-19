@@ -46,8 +46,7 @@
 		},
 		getImagePath: function getImagePath(imageId) {
 		    return this.model.getImagePath(imageId);
-		}
-		
+		},		
 		render:function render(){
 			this._applyTemplate()
 					._createButtons();
