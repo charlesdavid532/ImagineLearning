@@ -33,7 +33,8 @@
         },
         interactiveConfigLoad = function (event, preloader) {
             console.log('Interactive All files loaded');
-            loadPlayer();
+            //loadPlayer(); // Later it has to be uncommented
+            bindEvents();
         },
       getQueryString = function () {
           var queryString = decodeURIComponent(location.search.substring(1, location.search.length));
@@ -67,12 +68,16 @@
       loadPlayer = function () {
           var playerModel = new ImagineLearning.Common.Models.PlayerModel({
               audioData: engine.preloader.getAudioData(),
+              pathData: engine.preloader.getPathData(),
               interactiveModelName: engine.preloader.getInteractiveModelName(),
               interactiveViewName: engine.preloader.getInteractiveViewName(),
           });
           var playerView = new ImagineLearning.Common.Views.PlayerView({
-              model: playerModel,el:'#player'
+              model: playerModel, el: '#player'
           });
+      },
+      bindEvents = function () {
+          $('#button-1').on('click', $.proxy(loadPlayer, this));
       };
 
     // Create engine

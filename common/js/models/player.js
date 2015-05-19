@@ -62,8 +62,16 @@
 			    continueBtnModel:null,
 			    exitBtnModel:null,
 			    pauseBtnModel:null,
-			    hintBtnModel:null			    
+			    hintBtnModel:null,		 
+			    			    /**
+                * Holds the id and paths of all the resources
+                * @property audioData
+                * @type Object
+                * @default null
+                */
+   
 			    
+			    pathData: null
 			};
 		},
 		getNextBtnModel:function getNextBtnModel(){
@@ -104,6 +112,15 @@
 		initialize: function() {
 			this._createButtonModels();
 		},
+		getImagePath: function getImagePath(imageId) {
+		    var resourcePaths = this.get('pathData');
+
+		    for (var file in resourcePaths) {
+		        if (resourcePaths[file].id === imageId && resourcePaths[file].type === "image") {
+		            return resourcePaths[file].path;
+		        }
+		    }
+		},		
 		_createButtonModels:function _createButtonModels(){
 			this._createNextBtnModel()
 					._createContinueBtnModel()

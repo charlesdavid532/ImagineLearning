@@ -9,7 +9,7 @@
       dataPath = "data",
       commonJS = common + js + "/",
       css = "css",
-      images = "images",
+      image = "image",
       data = "data",
       templates = "templates",
       models = "models",
@@ -76,9 +76,6 @@
       case "INTERACTIVE_CSS":
           _basePath += interactiveFolder + "/" + css + "/";
         break;
-      case "INTERACTIVE_IMAGES": // NOTE IS THIS USED??
-        _basePath += css + "/" + images + "/";
-        break;
       case "INTERACTIVE_COLLECTIONS":
           _basePath += interactiveFolder + "/" + js + "/" + collections + "/";
         break;
@@ -96,6 +93,9 @@
           break;
         case "INTERACTIVE_AUDIO":
             _basePath += interactiveFolder + "/" + media + "/" + audio + "/";
+            break;
+        case "INTERACTIVE_IMAGE":
+            _basePath += interactiveFolder + "/" + media + "/" + image + "/";
             break;
       default:
         _basePath = "";

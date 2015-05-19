@@ -2,7 +2,8 @@
     'use strict';
     var Preloader = function () {
         this._events = {};
-        this._audioData = {};
+        this._audioData = [];
+        this._resourcePaths = [];
         this._interactiveModelName = null;
         this._interactiveViewName = null;
         return this;
@@ -36,13 +37,21 @@
         $.each(config, function (key, value) {
             switch (key) {
                 case "audio":
-                    preloader._audioData.id = value[0].id;
-                    preloader._audioData.src = ImagineLearning.Path.getPath(value[0]);
+                    var  i = 0;
+                    for (; i < value.length; i++) {
+                        var data = {};
+                        data.id = value[i].id;
+                        data.src = ImagineLearning.Path.getPath(value[i]);
+                        data.type = value[i].type;
+                        preloader._audioData.push(data);
+                        preloader._resourcePaths.push({ "type": key, "id": value[i].id, "path": ImagineLearning.Path.getPath(value[i]) });
+                    }
                     break;
                 default:
                     if (value.length > 0) {
                         $.each(value, function (subKey, subValue) {
-                            fileList.push({ "id": subValue.id, "src": ImagineLearning.Path.getPath(subValue) })
+                            fileList.push({ "id": subValue.id, "src": ImagineLearning.Path.getPath(subValue) });
+                            preloader._resourcePaths.push({ "type": key, "id": subValue.id, "path": ImagineLearning.Path.getPath(subValue) });
                         });
                     }
                     break;
@@ -132,6 +141,10 @@
 
     Preloader.prototype.getInteractiveViewName = function () {
         return this._interactiveViewName;
+    };
+
+    Preloader.prototype.getPathData = function () {
+        return this._resourcePaths;
     };
     // Events map
     Preloader.EVENTS = {

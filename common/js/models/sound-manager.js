@@ -1,5 +1,5 @@
-(function(CommonModel) {
-	CommonModel.AudioManager = Backbone.Model.extend({
+(function (CommonModels) {
+    CommonModels.AudioManager = Backbone.Model.extend({
 		defaults : function() {
 			return {
 				/**

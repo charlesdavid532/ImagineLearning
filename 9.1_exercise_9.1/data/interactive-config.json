@@ -48,7 +48,21 @@
 		{
 			"id": "sound",
 			"url": "sound.mp3",
+			"type": "audio/mpeg",
 			"basePath": "INTERACTIVE_AUDIO"
+		},
+		{
+			"id": "sound1",
+			"url": "sound1.mp3",
+			"type": "audio/mpeg",
+			"basePath": "INTERACTIVE_AUDIO"
+		}
+	],
+	"image": [
+		{
+			"id": "image1",
+			"url": "image_zF.png",
+			"basePath": "INTERACTIVE_IMAGE"
 		}
 	],
     "templates": [
