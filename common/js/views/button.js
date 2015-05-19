@@ -137,7 +137,7 @@
 		 * @private
 		 */
 		'_isButtonActive' : function _isButtonActive() {
-			if (this.model.getState() === ButtonModel.STATES.ACTIVE) {
+			if (this.model.getState() === ImagineLearning.Common.Models.ButtonModel.STATES.ACTIVE) {
 				return true;
 			}
 			return false;
@@ -151,7 +151,7 @@
 		 */
 		'_stateChange' : function _stateChange() {
 			var state = this.model.getState(),
-			    buttonStates = ButtonModel.STATES,
+			    buttonStates = ImagineLearning.Common.Models.ButtonModel.STATES,
 			    $el = this.$el;
 
 			if (state === buttonStates.ACTIVE) {

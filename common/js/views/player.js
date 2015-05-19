@@ -13,6 +13,7 @@
 		    // Create interactive model view
 		    this._createSoundManager();
 		    this._createInteractive();
+		    this.render();
 		},
 
 		_createInteractive: function _createInteractive() {
@@ -36,9 +37,34 @@
                     });
 
 		    this.model.set({ 'soundModel': model, 'soundView': view });
+		},
+		render:function render(){
+			this._applyTemplate()
+					._createButtons();
+		},
+		_applyTemplate:function _applyTemplate(){
+			var playerTemplate=Imagine.Learning.Common.Templates.player();
+			this.$el.append(playerTemplate);
+			return this;
+		},
+		_createButtons:function _createButtons(){
+			this._createLeftPanelButtons();
+			return this;
+		},
+		_createLeftPanelButtons:function _createLeftPanelButtons(){
+			var model=this.model,
+					continueBtnModel=model.getContinueBtnModel(),
+					exitBtnModel=model.getExitBtnModel(),
+					continueBtnView=null,
+					exitBtnView=null;
+					continueBtnView =new ImagineLearning.Common.Views.ButtonView({
+						model:continueBtnModel
+					});
+					exitBtnView =new ImagineLearning.Common.Views.ButtonView({
+						model:exitBtnModel
+					});
+					return this;
 		}
-
-		
 	}, {
 		
 	});

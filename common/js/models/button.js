@@ -43,7 +43,7 @@
 				});
 			}
 			if (this.getState() === null) {
-				this.setState(ButtonModel.STATES.ACTIVE);
+				this.setState(CommonModels.ButtonModel.STATES.ACTIVE);
 			}
 		},
 

@@ -71,3 +71,101 @@
 .disabled {
   cursor: default;
 }
+.player{
+	width:600px;
+	height:600px;
+	background:rgba(0,100,255,0.25);
+}
+.player-holder{
+	width:100%;
+	height: 100%;
+}
+.text-container{
+  position: relative;	
+  top: 50%;
+  transform: translateY(-50%);	
+  text-align: center; 	
+}
+.top-right-next-button{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  float: right;
+  background-color: rgba(255,0,0,0.25);
+  border-bottom-left-radius: 50%;	
+}
+.bottom-control-panel{
+  height: 50px;
+  width: 200px;
+  position: relative;
+  clear: both;
+  float: right;
+  top: 450px;
+  background-color: rgba(0,255,0,0.5);	
+}
+.bottom-panel-btn{
+  position: relative;
+  float: left;
+  height: 50px;
+  text-align: center;
+  width: 80px;
+  border-radius: 50%;
+  background-color: rgba(200,70,200,0.5);  	
+  margin-left: 10px;
+}
+.left-control-panel{
+  height: 600px;
+  width: 300px;
+  position: absolute;
+  background-color: rgba(30,20,255,0.1);	
+}
+.exit-panel{
+  height: 600px;
+  width: 300px;
+  position: absolute;
+  background-color: rgba(255,255,255,0.3);
+  left: 308px;	
+}
+.exit-panel-popup-container{
+  position: Relative;
+  top: 50%;
+  transform: translateY(-50%);	
+}
+.exit-panel-text-container{
+  position: Relative;
+}
+.exit-panel-header-text{
+	text-align: center;
+  font-size: 30px;	
+	color:rgba(255,0,0,0.5);
+}
+.exit-panel-description-text{
+  position: relative;	
+  font-size: 18px;  	
+  top: 20px;
+  text-align: center;
+}
+.exit-panel-popup-btn-container{
+	position: relative;
+  height: 50px;  
+  top: 30px;	  	
+}
+.popup-btn{
+  position: relative;
+  height: 30px;
+  width: 100px;
+  float: left; 
+  text-align: center; 
+  top: 50%;
+  transform: translateY(-50%);	 
+	border-radius: 7px;  
+  font-size: 18px;	   
+}
+.exit-panel-yes-button{
+  margin-left: 35px;	
+  background-color: rgba(0,255,0,0.7);
+}
+.exit-panel-no-button{
+  margin-left: 30px;	
+  background-color: rgba(255,0,0,0.7);
+}

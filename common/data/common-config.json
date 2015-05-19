@@ -17,8 +17,11 @@
 				"id": "sound-view",
 				"url": "sound-manager.js",
 				"basePath": "COMMON_VIEWS"
-			},{
-           
+			},{          
+				"id": "player-template",
+				"url": "player.js",
+				"basePath": "COMMON_TEMPLATES"
+			}, {         
 				"id": "button-template",
 				"url": "button.js",
 				"basePath": "COMMON_TEMPLATES"

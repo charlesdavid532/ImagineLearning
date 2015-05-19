@@ -1,8 +1,9 @@
-this["Concord"] = this["Concord"] || {};
-this["Concord"]["Common"] = this["Concord"]["Common"] || {};
-this["Concord"]["Common"]["Templates"] = this["Concord"]["Common"]["Templates"] || {};
+this["Imagine"] = this["Imagine"] || {};
+this["Imagine"]["Learning"] = this["Imagine"]["Learning"] || {};
+this["Imagine"]["Learning"]["Common"] = this["Imagine"]["Learning"]["Common"] || {};
+this["Imagine"]["Learning"]["Common"]["Templates"] = this["Imagine"]["Learning"]["Common"]["Templates"] || {};
 
-this["Concord"]["Common"]["Templates"]["button"] = function(obj) {
+this["Imagine"]["Learning"]["Common"]["Templates"]["button"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
